@@ -20,5 +20,5 @@ server.use("/", (req, res) => {
 });
 
 server.listen(4000, () => {
-  console.log("Server is listening...");
+  console.log("Server is listening on localhost:4000...");
 });
