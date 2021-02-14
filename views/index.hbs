@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentine Quote Generator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Valentine Quote Generator</h1>
+    <div class="result"></div>
+    <button id="generate" class="btn btn-danger">Get quote</button>
+  </div>
+  <script src="./../app.js"></script>
+  <script>
+    const resultDiv = document.querySelector(".result")
+    const generateBtn = document.querySelector("#generate");
+    generateBtn.addEventListener("click", () => {
+      loadRandomQuote(resultDiv)
+    })
+  </script>
+</body>
+</html>
